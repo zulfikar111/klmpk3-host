@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KL CAFE</title>
+    <!--font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!--syle css-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      const navMenu = document.querySelector(".navbarkanan");
+      const menuBtn = document.querySelector("#hamburger-menu");
+
+      menuBtn.onclick = () => {
+        navMenu.classList.toggle("active");
+      };
+    </script>
+  </head>
+
+  <body>
+    <!--header -->
+    <nav class="navbar">
+        <div class="navbar-nav">
+        <a href="#" class="nav-logo">KL COFE X <span>to.KOBU.ku</span>.</a>
+      </div>
+
+   
+        <div class="navbarkanan">
+          <a href="#hero">home</a>
+          <a href="#about">about</a>
+          <a href="#menu">menu</a>
+          <a href="#contact">contact</a>
+        </div>
+    
+      <div class="navbar-extra">
+        <a href="£" class="logo-fether" id="search"
+          ><i data-feather="search"></i
+        ></a>
+        <a href="#" class="logo-fether" id="hamburger-menu"
+          ><i data-feather="align-right"></i
+        ></a>
+      </div>
+    </nav>
+
+
+<div class="cart-modal" id="cartModal">
+  <div class="cart-content">
+    <h2>Keranjang</h2>
+    <div id="cartItems"></div>
+    <h3 id="cartTotal">Total: Rp 0</h3>
+    <button id="closeCart">Tutup</button>
+  </div>
+</div>
+
+
+    <!--hero section-->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h4>selamat datang di <span>KL KAFE X</span> to.KOBU.ku</h4>
+        <h2>lihat dan nikmati menu menu yang ada</h2>
+        <p>Merasakan hal yang baru menikmati ngopi sambil membaca buku </p>
+        <a href="#menu" class="cta">Beli Sekarang</a>
+      </div>
+
+      <div class="hero-logo">
+        <img src="../img/logo kl kafe.png  " alt="logo KL" />
+        <img src="../img/logo to.kobu.ku.png  " alt="logo KL" />
+      </div>
+    </section>
+
+    <!--about section-->
+    <section id="about" class="about">
+      <h2>tentang <span>kami</span></h2>
+
+      <div class="row">
+        <div class="about-row">
+          <img src="../img/foto KL depan.jpg" alt="KL Kafe" />
+        </div>
+        <div class="contain">
+          <h3><span>KL</span> Kafe </h3>
+          <p>
+            KL Coffee hadir sebagai coffee shop edukatif yang menggabungkan konsep kedai kopi dengan perpustakaan mini untuk menyediakan ruang nyaman, produktif, dan inspiratif. Konsep ini muncul dari kebutuhan akan tempat nongkrong yang tidak hanya untuk menikmati kopi, tetapi juga mendukung aktivitas membaca, belajar, berdiskusi, dan berkreasi. Dengan target utama mahasiswa, KL Coffee menawarkan fasilitas baca, internet stabil, serta suasana tenang dan estetik. Pemilihan tema warna hijau dan putih menciptakan kesan alami, bersih, dan menenangkan sehingga mendukung fokus dan kenyamanan pengunjung.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--menu section-->
+    <section id="menu" class="menu">
+      <div class="menu-container">
+    
+        <!-- Bagian kiri kategori -->
+        <div class="menu-category">
+        <h3>Kategori Menu</h3>
+        <ul>
+          <li class="logo-fether" id="search"><i data-feather="coffee"></i
+          data-category="Coffee">  Espreso Based</li>
+          <li class="logo-fether" id="search"><i data-feather="coffee"></i
+            data-category="Coffee"> Manual filter</li>
+          <li class="logo-fether" id="search"><i data-feather="coffee"></i
+            data-category="signature"> Signature</li>
+          <li class="logo-fether" id="search"><i data-feather="coffee"></i
+            data-category="Coffee"> Ice coffee</li>
+          <div src="../img/food-icon.jpg" alt="food"
+          > <li >non coffe</li></div>
+          <li>Milk Based</li>
+          <li> Moctail</li>
+        </ul>
+        
+        </div>
+    
+        <!-- Bagian kanan slider -->
+        <div class="menu-slider">
+            <div class="image-box">
+              <img id="menu-image" class="menu Image" src="">
+            </div>
+            
+          </div>
+
+          <div class="menu-info">
+            <h2>category</h2>
+            <h1>menuName</h1>
+            <p>menuDesc</p>
+            <h3>menuprice</h3>
+          </div>
+          
+          
+    
+          <!-- Controls -->
+          <div class="slide-controls">
+            <button id="prev"><img src="../img/arrow-left.svg"></button>
+            <button id="next"><img src="../img/arrow-right.svg"></button>
+          </div>
+    
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+        </div>
+
+            
+      </div>
+    </section>
+    
+        
+
+    <!--contact saction stare-->
+    <section id="contact" class="contact">
+      <h2>contact <span>kami</span></h2>
+      <p>
+ 
+      </p>
+
+      <div class="row">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180.85412961757788!2d104.90753514276523!3d-4.84610350585641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e38a9007e7ebe15%3A0xf46f5d03fadbfe6a!2sKL%20Coffee%20X%20to.KOBU.ku!5e1!3m2!1sid!2sid!4v1763719854012!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <form  action="">
+            <div class="input-group">
+              <i data-feather="instagram"></i>
+              <input type="text" placeholder="instagram">
+            </div>
+
+            <div class="input-group">
+              <i data-feather="mail"></i>
+              <input type="text" placeholder="email">
+            </div>
+
+            <div class="input-group">
+              <i data-feather="phone"></i>
+              <input type="text" placeholder="no hp">
+            </div>
+            <button type="submit" class="btn">kirim pesan</button>
+          </form>
+      </div>
+    </section>
+
+    <!--contact section and-->
+
+    <!--footer awal-->
+    <footer>
+      <div class="sosial">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#hero">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#contact">contact</a>
+      </div>
+    </footer>
+
+    <!--feather icon-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--my javascip-->
+    <script src="../js/scrip.js"></script>
+  </body>
+</html>
